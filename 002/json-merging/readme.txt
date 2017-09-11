@@ -1,4 +1,8 @@
-±‡“Î£∫javac demo\JsonMerger.java
+### Compile
 
-‘À––£∫java -cp .;gson-2.8.1.jar demo.JsonMerger
+```javac demo\JsonMerger.java```
+
+### Run
+
+```java -cp .;gson-2.8.1.jar demo.JsonMerger```
 
