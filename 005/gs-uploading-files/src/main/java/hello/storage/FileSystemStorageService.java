@@ -5,7 +5,6 @@ import java.net.MalformedURLException;
 import java.nio.file.Path;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.FileSystemUtils;
@@ -77,7 +76,6 @@ public class FileSystemStorageService implements StorageService {
     public void init(){
         try{
             Files.createDirectory(rootLocation);
-
         } catch (IOException e) {
             throw new StorageException("Could not initialize storage", e);
         }
